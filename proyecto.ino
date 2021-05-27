@@ -1,3 +1,10 @@
+#include <require_cpp11.h>
+#include <MFRC522.h>
+#include <deprecated.h>
+#include <MFRC522Extended.h>
+
+#include <Stepper.h>
+
 #include <RTClib.h>
 
 #include <AT24CX.h>
@@ -48,6 +55,7 @@ Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, rows, cols);
 /*=============================
  * Global Variables
 ====================================*/
+char pin[] = "1234";
 
 void setup() {
   // put your setup code here, to run once:
